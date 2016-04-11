@@ -8,14 +8,10 @@ The example generates messages using timer trigger, writes them to the standard 
 endpoint (for testing purposes).
 
 You will need to compile this example first:
-  mvn install
-
-To run the example type
-  mvn camel:run
-
-You will see the message printed to the console every 5th second.
-
-To stop the example hit ctrl + c
+  mvn clean package
+  
+You can deploy the application on wildfly 8.2.x:
+  mvn wildfly:deploy
 
 For more help see the Apache Camel documentation
 
